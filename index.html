@@ -1,0 +1,105 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>HTMLDoc - a standard for documenting HTML</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="manifest" href="site.webmanifest">
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <h1>@use HTMLDoc<span> - a standard for documenting HTML</span></h1>
+  </header>
+
+  <article>
+    <h2>Introduction</h2>
+
+    <p>Wouldn't it be nice if there was a consistent markup standard for code comments in HTML?</p>
+
+    <p>Some scenarios where rigorous code comments could be useful:</p>
+
+    <ul>
+        <li>Non-intuitive or hackish usage of HTML tags, elements and attributes, where explanation would help</li>
+        <li>Other uses of non-visual elements</li>
+        <li>Accessibility features</li>
+        <li>Search engine optimisation (SEO) features</li>
+    </ul>
+
+    <p>Introducing HTMLDoc - a simple markup language for augmenting HTML tags and attributes with descriptive comments, which can be used to generate structured documentation.</p>
+
+    <h2>The Standard</h2>
+
+    <h3>Tags</h3>
+
+    <p>Tags are marked with @tag tag, followed by a space, then a description of the tag.</p>
+
+    <p>Example:</p>
+
+    <code>
+      <pre>
+        &lt;!--
+        @tag input input for amount paid
+        --&gt;
+        &lt;input type="number" id="amountPaid" /&gt;
+      </pre>
+    </code>
+
+    <h3>Attributes</h3>
+
+    <p>Attributes are marked up with the @attribute tag, followed by a space, then a description of the attribute.</p>
+
+    <p>Example:</p>
+    <code>
+      <pre>
+        &lt;!--
+        @tag input
+
+        @attribute step Allows entry of decimals into a number field, without
+        triggering validation errors.
+        --&gt;
+        &lt;input
+          type="number"
+          span="any"
+        /&gt;
+      </pre>
+    </code>
+
+    <h3>Values</h3>
+
+    <p>Attribute values are marked up with the @value tag, followed by a space, then a description of the value.</p>
+
+    <p>Example:</p>
+    <code>
+      <pre>
+        &lt;!--
+        @tag input 
+        
+        @attribute class
+        @value has-clear-button Pulls the spin-button to the left, to make
+        space for the clear button.
+        --&gt;
+        &lt;input
+          type="number"
+          class="has-clear-button"
+        /&gt;
+        &lt;button class="clear-button"&gt;Clear&lt;/button&gt;
+      </pre>
+    </code>
+  </article>
+  <footer>
+    <a class="license-badge" href="http://creativecommons.org/licenses/by-sa/3.0/">
+      <img alt="Creative Commons License" class="license-badge" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/CC-BY-SA_icon.svg/88px-CC-BY-SA_icon.svg.png" width="80" height="15">
+    </a>
+    <br> Copyright © 2011-2017 the
+    <a href="https://github.com/jonathanconway/htmldoc/contributors">contributors</a> to the HTMLDoc documentation project.
+    <br> This website is <a href="https://github.com/jonathanconway/htmldoc">open source</a> and is licensed under the <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">
+        Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.
+  </footer>
+</body>
+</html>

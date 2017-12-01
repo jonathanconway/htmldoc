@@ -1,0 +1,34 @@
+body, p {
+  font: 1em 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  background-color: #EBEBEB;
+  color: #1e7d67;
+  margin: 0;
+  margin-bottom: 1rem;
+  padding: 0.5rem 2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-bottom: 1px #C6C6C6 solid;
+}
+
+h1 span {
+  font-weight: normal;
+}
+
+article {
+  margin: 0 2rem;
+}
+
+p {
+  padding: 0.5rem 0;
+}
+
+footer {
+  margin: 4rem 2rem 2rem 2rem;
+  font-style: italic;
+  font-size: 0.8em;
+}
