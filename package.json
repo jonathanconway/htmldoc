@@ -1,0 +1,23 @@
+{
+  "name": "htmldoc",
+  "version": "1.0.0",
+  "description": "A structured comments standard for HTML",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "npx surge . usehtmldoc.surge.sh",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonathanconway/htmldoc.git"
+  },
+  "author": "Jonathan Conway",
+  "license": "CC-BY-4.0",
+  "bugs": {
+    "url": "https://github.com/jonathanconway/htmldoc/issues"
+  },
+  "homepage": "https://github.com/jonathanconway/htmldoc#readme",
+  "devDependencies": {
+    "surge": "^0.23.1"
+  }
+}
